@@ -18,6 +18,7 @@ public class Hospital {
         String name = patientInfo[0];
         String ailment = patientInfo[1];
         Patient patient = null;
+        //Start each patient with a health index based on their ailment
         if(ailment.equals("Skin")) {
             Ailment skin = new Ailment(80,"Skin","Dermatology");
             patient = new Patient(name,skin);

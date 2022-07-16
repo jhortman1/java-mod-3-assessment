@@ -8,6 +8,7 @@ public class Ailment {
         this.name = name;
         this.associatedSpeciality = associatedSpecality;
     }
+    //Start each patient with a health index based on their ailment
     public int getStartingHealthIndex() {
         return startingHealthIndex;
     }

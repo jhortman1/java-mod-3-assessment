@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class InputValidator {
     private Scanner sc = new Scanner(System.in);
+    //Call out places where user input correction is needed
     public String validateStringInput(String prompt)
     {
         System.out.print(prompt);
@@ -12,6 +13,7 @@ public class InputValidator {
         }
         return validated;
     }
+    //Call out places where user input correction is needed
     public int validateIntInput(int upper, int lower, String prompt)
     {
         int validated = 0;
