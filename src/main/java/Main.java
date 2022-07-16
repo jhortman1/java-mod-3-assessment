@@ -1,4 +1,5 @@
 import java.io.PrintStream;
+import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
@@ -29,7 +30,10 @@ public class Main {
         {
             hospitalWorld.createPatient();
         }
-        int treatPatient = inputValidator.validateIntInput(4,0,"Choose");
+        //ObjectMapper ob = new ObjectMapper();
+        Doctor d = hospitalWorld.getSpecialityDoctor("Dermatology");
+        d.treatPatient();
+
 
 
 

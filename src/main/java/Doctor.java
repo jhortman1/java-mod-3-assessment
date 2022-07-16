@@ -49,4 +49,10 @@ public class Doctor {
     {
         return patientList.size();
     }
+    public void treatPatient()
+    {
+        for (Patient p :patientList) {
+            p.receiveTreatment(healingPower);
+        }
+    }
 }
